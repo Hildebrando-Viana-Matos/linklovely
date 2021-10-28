@@ -1,0 +1,158 @@
+/* Header =================================================================== */
+header {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+header img.profileImage {
+  width: 300px;
+  height: auto;
+  border-radius: 150px;
+  object-fit: cover;
+}
+
+header h1.nameProfile {
+  color: var(--main-color);
+  margin: 0.5rem 0;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+header .bioProfile p {
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--gray-400);
+}
+
+/* * */
+
+/* Socials ================================================================== */
+
+.socials {
+  margin: 2rem 0;
+}
+
+.socials .numbersSocials {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.numbersSocialsSingle {
+  width: calc(100% / 3 - 1rem);
+  text-align: center;
+}
+
+.numbersSocialsSingle h2.numbers {
+  color: var(--main-color);
+  font-size: 1.5rem;
+}
+
+.numbersSocialsSingle p {
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.numbersSocialsSingle p.socialName {
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+.instagram p.socialName {
+  color: var(--pink-500);
+}
+
+.tiktok p.socialName {
+  color: var(--blue-400);
+}
+
+.youtube p.socialName {
+  color: var(--red-400);
+}
+
+.socialsIcons {
+  margin: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.socialsIcons a {
+  text-decoration: none;
+  color: var(--main-color);
+  transition: filter 200ms;
+}
+
+.socialsIcons a:hover {
+  filter: brightness(0.9);
+}
+
+.socialsIcons a i {
+  font-size: 2.5rem;
+}
+/* * */
+
+/* Buttons ================================================================== */
+
+main {
+  margin: 2rem 0;
+}
+
+.button {
+  text-decoration: none;
+  width: 100%;
+  padding: 2rem 1rem;
+  margin: 1rem 0;
+  background: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray-100);
+  border-radius: 0.5rem;
+  transition: filter 200ms;
+}
+
+.button span.emojiButton {
+  font-size: 1.5rem;
+}
+
+.button h2.descButton {
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.button:hover {
+  filter: brightness(0.9);
+}
+
+/* * */
+
+@media (max-width: 590px) {
+  .button h2.descButton {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .button h2.descButton {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .button {
+    text-align: center;
+  }
+
+  .button span.emojiButton {
+    display: none;
+  }
+}
+
+@media (max-width: 330px) {
+  header img.profileImage {
+    width: 150px;
+    border-radius: 75px;
+  }
+}
